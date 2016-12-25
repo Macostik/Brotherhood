@@ -69,11 +69,6 @@ header .logo a {
 .language ul li a:hover {
   color: #fbc620;
 }
-@media screen and (max-width: 992px) {
-  .language ul li a {
-    padding: 10px;
-  }
-}
 .basket {
   text-align: center;
   margin: 19px 0 9px;
@@ -100,12 +95,6 @@ header .logo a {
   height: 40px;
   background: #fbc620 url("images/sprite.png") -1px -1px;
   border-radius: 50%;
-}
-@media screen and (max-width: 768px) {
-  .basket {
-    margin: 10px 0;
-    text-align: center;
-  }
 }
 /*main-menu*/
 body .fluid2 {
@@ -138,64 +127,6 @@ body .fluid2 {
 #main-menu li a:hover {
   color: #000000;
   background: #fbc620;
-}
-/*change breakpoint*/
-@media (max-width: 992px) {
-  #main-menu li {
-    display: block;
-    border: 0;
-  }
-  #main-menu li:first-child {
-    border: 0;
-  }
-  #main_menu {
-    padding: 0;
-  }
-  .navbar-header {
-    float: none;
-  }
-  .navbar-left,
-  .navbar-right {
-    float: none !important;
-  }
-  .navbar-toggle {
-    display: block;
-  }
-  .navbar-collapse {
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  }
-  .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
-  }
-  .navbar-collapse.collapse {
-    display: none!important;
-  }
-  .navbar-nav {
-    float: none!important;
-    margin-top: 7.5px;
-  }
-  .navbar-nav > li {
-    float: none;
-  }
-  .navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .collapse.in {
-    display: block !important;
-  }
-  .navbar-nav .open .dropdown-menu {
-    position: static;
-    float: none;
-    width: auto;
-    margin-top: 0;
-    background-color: transparent;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
 }
 /*tooltips*/
 li {
@@ -303,49 +234,6 @@ body .fluid3 {
   border: 1px solid #696969;
   border-bottom: 0;
   color: #696969;
-}
-@media screen and (max-width: 767px) {
-  body .fluid3 {
-    height: 750px;
-    padding: 150px 0 0 0;
-  }
-  body .fluid3 .fon .my_tabs {
-    position: relative;
-    top: -144px;
-  }
-  .fon {
-    height: 750px;
-  }
-  .fon .my_navtabs {
-    top: 0;
-  }
-  .fon .my_navtabs li {
-    float: none;
-    width: 40%;
-    text-align: center;
-    margin-left: 15%;
-    margin-bottom: 0px;
-  }
-  .fon .my_navtabs li a {
-    padding: 5px 20px;
-    border: 1px solid #0b0b0b;
-    border-bottom: 1px solid #0b0b0b;
-  }
-  .my_tabs > ul > li.active:nth-child(1) a,
-  .my_tabs > ul > li.active:nth-child(1) a:focus,
-  .my_tabs > ul > li.active:nth-child(1) a:hover {
-    border-bottom: 1px solid #fbc620;
-  }
-  .my_tabs > ul > li.active:nth-child(2) a,
-  .my_tabs > ul > li.active:nth-child(2) a:focus,
-  .my_tabs > ul > li.active:nth-child(2) a:hover {
-    border-bottom: 1px solid #3f8db9;
-  }
-  .my_tabs > ul > li.active:nth-child(3) a,
-  .my_tabs > ul > li.active:nth-child(3) a:focus,
-  .my_tabs > ul > li.active:nth-child(3) a:hover {
-    border-bottom: 1px solid #696969;
-  }
 }
 /*tab content*/
 .tab_content1 .men1 {
@@ -550,12 +438,6 @@ body .fluid3 {
 .my_carousel #my_control2:before {
   transform: rotate(135deg);
   left: 53%;
-}
-@media screen and (max-width: 767px) {
-  #my_control1:before,
-  #my_control2:before {
-    left: 0 !important;
-  }
 }
 /* indicators*/
 .my_carousel .my_indicators {
@@ -794,111 +676,6 @@ body .fluid3 {
 .tests h3 {
   margin: 0 0 40px 20px;
 }
-/*media text*/
-@media screen and (min-width: 1200px) {
-  .idea h3 strong,
-  .creative h3 strong,
-  .tests h3 strong {
-    display: none;
-  }
-}
-@media (min-width: 991px) and (max-width: 1200px) {
-  .idea:after,
-  .tests:after {
-    left: 303px;
-  }
-  .creative:after {
-    left: 645px;
-  }
-  .creative h3 span {
-    display: block;
-  }
-  .idea .img img {
-    margin: 85px 0 85px 0;
-  }
-  .creative .img img {
-    margin: 200px 0 85px 30px;
-  }
-  .tests .img img {
-    margin: 200px 0 85px 0;
-  }
-  .creative .text,
-  .tests .text {
-    margin-top: 380px;
-  }
-  .idea .number,
-  .tests .number {
-    left: 5px;
-  }
-  .creative .number {
-    right: 10px;
-  }
-  .idea h3 strong,
-  .creative h3 strong,
-  .tests h3 strong {
-    display: none;
-  }
-}
-@media screen and (max-width: 991px) {
-  .idea .text,
-  .creative .text,
-  .tests .text {
-    margin-top: 0;
-  }
-  .idea .img,
-  .creative .img,
-  .tests .img {
-    margin-bottom: 20px;
-  }
-  .creative .img img,
-  .tests .img img {
-    margin: 85px 0 85px 72px;
-  }
-  .creative:before,
-  .tests:before {
-    top: 365px;
-  }
-  .creative:after,
-  .tests:after {
-    left: 375px;
-    top: 22px;
-  }
-  .idea h3,
-  .creative h3,
-  .tests h3 {
-    text-align: center;
-  }
-  .idea .number,
-  .creative .number,
-  .tests .number {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .idea:before,
-  .idea:after,
-  .creative:before,
-  .creative:after,
-  .tests:before,
-  .tests:after {
-    display: none;
-  }
-  .idea .text,
-  .creative .text,
-  .tests .text {
-    margin-top: 20px;
-  }
-  .idea .text ul,
-  .creative .text ul,
-  .tests .text ul {
-    margin: 40px 0 30px 20px;
-  }
-  .idea .text h3,
-  .creative .text h3,
-  .tests .text h3 {
-    margin: 30px 0 40px 20px;
-  }
-}
 /*map*/
 .fluid8 {
   background: #1e1e1e;
@@ -911,6 +688,7 @@ body .fluid3 {
   padding: 31px 0 17px;
   border-bottom: 1px solid #555555;
   position: relative;
+  margin-bottom: 0;
 }
 .fluid8 h2:before {
   content: "";
@@ -923,7 +701,7 @@ body .fluid3 {
   left: 50%;
   margin-left: -40px;
 }
-.fluid8 .map {
+.map {
   height: 536px;
 }
 /*footer*/
@@ -985,7 +763,113 @@ body .fluid3 {
   font-weight: bold;
   font-family: "MyriadProRegular";
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 992px){
+  .footer{
+    .logo{
+      position: relative;
+      margin: 20px 0 20px;
+      left: 50%;
+      margin-left: -200px;
+    }
+  }
+}*/
+/*media queries*/
+/*1200px*/
+@media screen and (min-width: 1200px) {
+  .idea h3 strong,
+  .creative h3 strong,
+  .tests h3 strong {
+    display: none;
+  }
+}
+/*991px-1200px*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .idea:after,
+  .tests:after {
+    left: 303px;
+  }
+  .creative:after {
+    left: 645px;
+  }
+  .creative h3 span {
+    display: block;
+  }
+  .idea .img img {
+    margin: 85px 0 85px 0;
+  }
+  .creative .img img {
+    margin: 200px 0 85px 30px;
+  }
+  .tests .img img {
+    margin: 200px 0 85px 0;
+  }
+  .creative .text,
+  .tests .text {
+    margin-top: 380px;
+  }
+  .idea .number,
+  .tests .number {
+    left: 5px;
+  }
+  .creative .number {
+    right: 10px;
+  }
+  .idea h3 strong,
+  .creative h3 strong,
+  .tests h3 strong {
+    display: none;
+  }
+}
+/*991px*/
+@media screen and (max-width: 991px) {
+  .language ul li a {
+    padding: 10px;
+  }
+  .idea .text,
+  .creative .text,
+  .tests .text {
+    margin-top: 0;
+  }
+  .idea .img,
+  .creative .img,
+  .tests .img {
+    margin-bottom: 20px;
+  }
+  .creative .img img,
+  .tests .img img {
+    margin: 85px 0 85px 72px;
+  }
+  .creative:before,
+  .tests:before {
+    top: 365px;
+  }
+  .creative:after,
+  .tests:after {
+    left: 375px;
+    top: 22px;
+    height: 700px;
+  }
+  .idea h3,
+  .creative h3,
+  .tests h3 {
+    text-align: center;
+  }
+  .idea .number,
+  .creative .number,
+  .tests .number {
+    display: none;
+  }
+}
+/*767px*/
+@media screen and (max-width: 767px) {
+  .basket {
+    margin: 10px 0;
+    text-align: center;
+  }
+  #my_control1:before,
+  #my_control2:before {
+    left: 0 !important;
+  }
   .footer {
     text-align: center;
   }
@@ -1004,14 +888,126 @@ body .fluid3 {
   .footer .tel {
     margin-bottom: 20px;
   }
-}
-/*@media screen and (max-width: 992px){
-  .footer{
-    .logo{
-      position: relative;
-      margin: 20px 0 20px;
-      left: 50%;
-      margin-left: -200px;
-    }
+  .idea:before,
+  .idea:after,
+  .creative:before,
+  .creative:after,
+  .tests:before,
+  .tests:after {
+    display: none;
   }
-}*/
+  .idea .text,
+  .creative .text,
+  .tests .text {
+    margin-top: 20px;
+  }
+  .idea .text ul,
+  .creative .text ul,
+  .tests .text ul {
+    margin: 40px 0 30px 20px;
+  }
+  .idea .text h3,
+  .creative .text h3,
+  .tests .text h3 {
+    margin: 30px 0 40px 20px;
+  }
+  body .fluid3 {
+    height: 750px;
+    padding: 150px 0 0 0;
+  }
+  body .fluid3 .fon .my_tabs {
+    position: relative;
+    top: -144px;
+  }
+  .fon {
+    height: 750px;
+  }
+  .fon .my_navtabs {
+    top: 0;
+  }
+  .fon .my_navtabs li {
+    float: none;
+    width: 40%;
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 0px;
+  }
+  .fon .my_navtabs li a {
+    padding: 5px 20px;
+    border: 1px solid #0b0b0b;
+    border-bottom: 1px solid #0b0b0b;
+  }
+  .my_tabs > ul > li.active:nth-child(1) a,
+  .my_tabs > ul > li.active:nth-child(1) a:focus,
+  .my_tabs > ul > li.active:nth-child(1) a:hover {
+    border-bottom: 1px solid #fbc620;
+  }
+  .my_tabs > ul > li.active:nth-child(2) a,
+  .my_tabs > ul > li.active:nth-child(2) a:focus,
+  .my_tabs > ul > li.active:nth-child(2) a:hover {
+    border-bottom: 1px solid #3f8db9;
+  }
+  .my_tabs > ul > li.active:nth-child(3) a,
+  .my_tabs > ul > li.active:nth-child(3) a:focus,
+  .my_tabs > ul > li.active:nth-child(3) a:hover {
+    border-bottom: 1px solid #696969;
+  }
+}
+/*change breakpoint menu*/
+@media (max-width: 991px) {
+  #main-menu li {
+    display: block;
+    border: 0;
+  }
+  #main-menu li:first-child {
+    border: 0;
+  }
+  #main_menu {
+    padding: 0;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}

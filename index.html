@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <title>Brotherhood</title>
 </head>
@@ -99,8 +98,8 @@
                         </div>
                         <div role="tabpanel" class="tab-pane tab_content1" id="profile">
                             <div class="col-xs-8 col-sm-6 col-md-4 text">
-                                <h2>СЕРІЯ</h2>
-                                <h1>HIGHLAND</h1>
+                                <h3>СЕРІЯ</h3>
+                                <h2>HIGHLAND</h2>
                                 <p><span>Власна розробка</span> українських військових, що увібрала в себе
                                     <span>найкраще</span> з нині можливого:</p>
                                 <ul>
@@ -123,8 +122,8 @@
                         </div>
                         <div role="tabpanel" class="tab-pane tab_content1" id="messages">
                             <div class="col-xs-8 col-sm-6 col-md-4 text">
-                                <h2>СЕРІЯ</h2>
-                                <h1>SIMPLE</h1>
+                                <h3>СЕРІЯ</h3>
+                                <h2>SIMPLE</h2>
                                 <p><span>Власна розробка</span> українських військових, що увібрала в себе
                                     <span>найкраще</span> з нині можливого:</p>
                                 <ul>
@@ -258,7 +257,7 @@
             <div class="number">2</div>
             <div class="col-xs-12 hidden-xs col-sm-12 col-md-8 col-lg-7 pull-right img">
 
-                <img src="images/comp.png" alt="">
+                <img src="images/car.png" alt="">
             </div>
             <div class="col-xs-12  col-sm-12 col-md-4 col-lg-5 pull-left text">
                 <h3><strong>2</strong> ПОТІМ <span>СТВОРЕННЯ РЕЧІ</span></h3>
@@ -278,7 +277,7 @@
         <div class="container tests">
             <div class="number">3</div>
             <div class="col-xs-12 hidden-xs col-sm-12 col-md-7 img">
-                <img src="images/comp.png" alt="">
+                <img src="images/twomem.png" alt="">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-5 text">
                 <h3><strong>3</strong> І НАРЕШТІ <span>ТЕСТУВАННЯ</span></h3>
@@ -294,8 +293,9 @@
 
     <div class="container-fluid fluid8">
         <h2 class="container">НАШІ ДИЛЕРИ</h2>
-        <div class="map"></div>
+
     </div>
+    <div class="container-fluid map" id="map_canvas"></div>
 
     <footer class="container-fluid fluid9">
         <div class="container footer">
@@ -325,6 +325,10 @@
                 data-placement="left" title="sales@brother-hood.com.ua"></a></li>
     </ul>
 
+    <iframe src="//www.google.com/maps/embed/v1/directions?origin=Tate+Modern
+      &destination=Tower+of+London&key=AIzaSyA3tGFRWNiULz4sbFOxDbyNynsnfSNCJfU">
+    </iframe>
+
                                          <!--scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -335,5 +339,409 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvMXRQdzczAXRThiK2rncmgZYZFcoCKUE&callback=initMap&language=ru">
+    </script>
+
+    <script type="text/javascript">
+        google.maps.event.addDomListener(window, 'load', init);
+        function initMap() {
+            var mapOptions = {
+                zoom: 6,
+                center: new google.maps.LatLng(48.979719, 31.309188), // New York
+                scrollwheel: false,
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "saturation": 36
+                            },
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 40
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 17
+                            },
+                            {
+                                "weight": 1.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#cccccc"
+                            },
+                            {
+                                "lightness": "-50"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.locality",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "lightness": "-31"
+                            },
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.locality",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "lightness": "-63"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#1e1e1e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape.natural.terrain",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "gamma": "1.33"
+                            },
+                            {
+                                "color": "#252727"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 21
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 29
+                            },
+                            {
+                                "weight": 0.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 18
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 19
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    }
+                ]
+            };
+
+            var mapElement = document.getElementById('map_canvas');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var image = 'images/marker.png';
+
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(49.679719, 32.009988), //Черкасы
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(46.895929, 32.609988), //Херсон
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(48.779719, 32.209988), //Кировоград
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(50.089019, 24.058988), //Львов
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(50.509019, 28.658988), //Житомир
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(49.509019, 28.448988), //Винница
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(50.709019, 30.458988), //Киев
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(51.759019, 31.248988), //Чернигов
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(48.559019, 25.938988), //Черновцы
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(46.809019, 30.708988), //Одесса
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(48.359019, 37.788988), //Донецк
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(47.409019, 37.508988), //Мариуполь
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(49.859019, 34.498988),//Харьков
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(50.309019, 36.208988),//Полтава
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(48.059019, 35.158988),//Запорожье
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(51.159019, 34.808988),//Плтава
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(48.759019, 35.158988),//Запорожье
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(48.859019, 39.308988),//Луганск
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(47.259019, 32.008988),//Николаев
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(48.209019, 33.408988),//Кривой Рог
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+//            var marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(49.299019, 33.408988),//Кременчук
+//                icon: image,
+//                map: map,
+//                title: 'Brotherhood'
+//            });
+
+            function Marker(lat, lng) {
+//                console.log(lat, lng);
+                new google.maps.Marker({
+                    position: new google.maps.LatLng(lat, lng),//Кременчук
+                    icon: image,
+                    map: map,
+                    title: 'Brotnherhood'
+                });
+            }
+            var points = [
+                {lat: 49.679719, lng: 32.009988}, //Черкасы
+                {lat: 46.895929, lng: 32.609988}, //Херсон
+                {lat: 48.779719, lng: 32.209988}, //Кировоград
+                {lat: 50.089019, lng: 24.058988}, //Львов
+                {lat: 50.509019, lng: 28.658988}, //Житомир
+                {lat: 49.509019, lng: 28.448988}, //Винница
+                {lat: 50.709019, lng: 30.458988}, //Киев
+                {lat: 51.759019, lng: 31.248988}, //Чернигов
+                {lat: 48.559019, lng: 25.938988}, //Черновцы
+                {lat: 46.809019, lng: 30.708988}, //Одесса
+                {lat: 48.359019, lng: 37.788988}, //Донецк
+                {lat: 47.409019, lng: 37.508988}, //Мариуполь
+                {lat: 49.859019, lng: 34.498988}, //Полтава
+                {lat: 50.309019, lng: 36.208988}, //Харьков
+                {lat: 48.059019, lng: 35.158988}, //Запорожье
+                {lat: 48.859019, lng: 39.308988}, //Луганск
+                {lat: 47.259019, lng: 32.008988}, //Николаев
+                {lat: 48.209019, lng: 33.408988}, //Кривой Рог
+                {lat: 49.299019, lng: 33.408988}, //Кременчуг
+                {lat: 48.759019, lng: 35.058988}, //Днепр
+                {lat: 51.209019, lng: 34.808988} //Сумы
+            ];
+            for (var i = 0; i < points.length; i++) {
+                new Marker(points[i])
+            }
+        }
+    </script>
+
 </body>
 </html>
